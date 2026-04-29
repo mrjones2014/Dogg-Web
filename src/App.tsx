@@ -8,6 +8,8 @@ import { About } from './components/pages/About'
 import { Events } from './components/pages/Events'
 import { Clicker } from './components/pages/Clicker'
 import { Leaderboard } from './components/pages/Leaderboard'
+import { ClippyComponent } from './components/Clippy'
+import { RetroCursor } from './components/RetroCursor'
 import dogghouseLogo from './assets/logo.png'
 import doggLogo from './assets/dog-logo.png'
 import calendarIcon from './assets/calendar-icon.png'
@@ -112,6 +114,8 @@ export default function App() {
       })}
 
       <Taskbar openWindows={openWindows} minimizedIds={minimizedIds} onOpenWindow={openWindow} />
+      <ClippyComponent />
+      <RetroCursor />
     </section>
   )
 }
